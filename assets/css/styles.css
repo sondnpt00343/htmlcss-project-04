@@ -81,6 +81,21 @@ button {
     height: 20px;
     border-radius: 50%;
     background: #fff;
+    box-shadow: 4px 3px 10px -1px rgba(191, 41, 0, 0.4);
+}
+
+.section-heading {
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 1.19;
+    color: #000958;
+}
+
+.section__desc {
+    margin-top: 24px;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #656689;
 }
 
 /* Header */
@@ -271,4 +286,67 @@ button {
     line-height: 1;
     text-decoration: underline;
     color: #000958;
+}
+
+/* About */
+.about {
+    margin-top: 207px;
+}
+
+.about__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about__label {
+    font-family: Sora, sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #5e6085;
+}
+
+.about__heading {
+    margin-top: 15px;
+}
+
+.about__heading,
+.about__desc {
+    width: 444px;
+}
+
+.about__checklist {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    gap: 36px;
+    margin-top: 54px;
+}
+
+.about__check-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #48496a;
+}
+
+.about__check-item::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: #ff5d31;
+    box-shadow: 0px 4px 15px -3px rgba(255, 93, 49, 0.69);
+    border-radius: 4px;
+}
+
+.about__check-item::after {
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    content: url(../icons/check.svg);
 }
