@@ -589,6 +589,7 @@ button {
 .service__body {
     display: grid;
     grid-template-columns: auto 1fr auto;
+    column-gap: 65px;
     margin-top: 70px;
 }
 
@@ -631,4 +632,39 @@ button {
 .service-item__more::after {
     content: url(../icons/arrow-up-right.svg);
     margin: 1px 0 0 5px;
+}
+
+.service__media {
+    position: relative;
+    margin-top: 18px;
+}
+
+.service__media::after {
+    content: "";
+    position: absolute;
+    height: 350px;
+    left: 16px;
+    right: 16px;
+    bottom: 0;
+    background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+    border-radius: 10px;
+}
+
+.service__img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+}
+
+.service__cta-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.service__cta {
+    min-width: 214px;
+    color: #ff5b2e;
+    border-color: currentColor;
 }
