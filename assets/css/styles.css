@@ -577,7 +577,8 @@ button {
     text-align: center;
 }
 
-.service__desc {
+.service__desc,
+.staff__desc {
     margin-bottom: 15px;
     font-family: Sora, sans-serif;
     font-weight: 600;
@@ -677,6 +678,79 @@ button {
 
 .service__cta {
     min-width: 214px;
+    color: #ff5b2e;
+    border-color: currentColor;
+}
+
+/* Staff */
+.staff {
+    padding: 130px 0;
+}
+
+.staff__desc,
+.staff__heading {
+    text-align: center;
+}
+
+.staff__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 35px;
+    margin-top: 45px;
+}
+
+.staff-item {
+    text-align: center;
+}
+
+.staff-item__img-wrap {
+    position: relative;
+    margin: 0 16px;
+    border-radius: 130px;
+    overflow: hidden;
+}
+
+.staff-item__img-wrap::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 266px;
+    border-radius: inherit;
+    background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+}
+
+.staff-item__img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+}
+
+.staff-item__title {
+    margin-top: 34px;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #656689;
+}
+
+.staff-item__name {
+    margin-top: 14px;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1;
+    color: #000958;
+}
+
+.staff__cta-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.staff__cta {
+    min-width: 193px;
     color: #ff5b2e;
     border-color: currentColor;
 }
