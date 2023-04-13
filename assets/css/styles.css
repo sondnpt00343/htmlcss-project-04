@@ -1085,3 +1085,30 @@ button {
     width: 24px;
     background: #ff5b2e;
 }
+
+/* Blog */
+.blog {
+    padding: 78px 0;
+}
+
+.blog__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__info {
+    width: 350px;
+    margin-right: 74px;
+}
+
+.blog__desc {
+    margin-top: 0;
+}
+
+.blog__cta {
+    min-width: 182px;
+    margin-top: 24px;
+    border: 1px solid rgb(255 91 46 / 60%);
+    color: #ff5b2e;
+}
