@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://sondnpt00343.github.io/htmlcss-project-04/sitemap.xml
